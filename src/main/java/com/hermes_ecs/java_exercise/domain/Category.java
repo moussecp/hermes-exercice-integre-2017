@@ -15,7 +15,7 @@ public class Category implements Identifiable<Long> {
     private final List<Product> products = new ArrayList<>();
     @Id
     @GeneratedValue(generator = "CATEGORY_SEQ_GEN")
-    @SequenceGenerator(name = "CATEGORY_SEQ_GEN", sequenceName = "CATEGORY_SEQ", allocationSize = 20)
+    @SequenceGenerator(name = "CATEGORY_SEQ_GEN", sequenceName = "CATEGORY_SEQ", allocationSize = 1)
     private Long id;
     @Column(nullable = false)
     private String name;

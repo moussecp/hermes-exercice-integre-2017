@@ -14,7 +14,7 @@ public class Buyer implements Identifiable<Long> {
 
     @Id
     @GeneratedValue(generator = "BUYER_SEQ_GEN")
-    @SequenceGenerator(name = "BUYER_SEQ_GEN", sequenceName = "BUYER_SEQ", allocationSize = 20)
+    @SequenceGenerator(name = "BUYER_SEQ_GEN", sequenceName = "BUYER_SEQ", allocationSize = 1)
     private Long id;
 
     @Column(name = "FIRST_NAME", nullable = false)

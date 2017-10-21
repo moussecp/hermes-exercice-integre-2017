@@ -13,7 +13,7 @@ public class Product implements Identifiable<Long> {
 
     @Id
     @GeneratedValue(generator = "PRODUCT_SEQ_GEN")
-    @SequenceGenerator(name = "PRODUCT_SEQ_GEN", sequenceName = "PRODUCT_SEQ", allocationSize = 20)
+    @SequenceGenerator(name = "PRODUCT_SEQ_GEN", sequenceName = "PRODUCT_SEQ", allocationSize = 1)
     private Long id;
 
     @Column(nullable = false)
