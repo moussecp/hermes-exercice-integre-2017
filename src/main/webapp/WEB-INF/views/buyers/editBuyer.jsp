@@ -28,7 +28,7 @@
     <spring:url value="/buyers/{buyerId}" var="editBuyerUrl">
         <spring:param name="buyerId" value="${buyer.id}"/>
     </spring:url>
-    <f:form action="${editBuyerUrl}" method="put" modelAttribute="buyer" cssClass="form-horizontal">
+    <f:form action="${editBuyerUrl}" method="POST" modelAttribute="buyer" cssClass="form-horizontal">
         <c:import url="buyerForm.jsp"/>
     </f:form>
 </div>

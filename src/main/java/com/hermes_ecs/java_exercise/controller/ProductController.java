@@ -67,7 +67,7 @@ public class ProductController {
         }
     }
 
-    @RequestMapping(value = {"/{productId}"}, method = RequestMethod.PUT)
+    @RequestMapping(value = {"/{productId}"}, method = RequestMethod.POST)
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public String editProduct(@PathVariable Long productId,
                               @ModelAttribute(PRODUCT_MODEL_ATTRIBUTE) @Valid ProductForm productForm,
