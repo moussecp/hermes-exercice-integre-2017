@@ -7,41 +7,41 @@
     <changeSet id="loadCategories" author="yannick" logicalFilePath="changes2.xml">
         <sql splitStatements="true">
             insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'BINOCULARS', 'ACCESSORIES');
-            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval,'UTILITY', 'ACCESSORIES');
-            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval,'MASK', 'ACCESSORIES');
-            <!--insert into CATEGORY(name, department) values('ARMOR', 'DEFENSE');-->
-            <!--insert into CATEGORY(name, department) values('SHIELD', 'DEFENSE');-->
-            <!--insert into CATEGORY(name, department) values('SUIT', 'DEFENSE');-->
-            <!--insert into CATEGORY(name, department) values('COMLINK', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('COMPUTER', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('DATACARD', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('DATAPAD', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('HOLO', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('HUD', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('PROCESSOR', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('SCANNER', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('SENSOR', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('TRANSLATOR', 'ELECTRONIC');-->
-            <!--insert into CATEGORY(name, department) values('DROID', 'MECHANIC');-->
-            <!--insert into CATEGORY(name, department) values('FIGHTER', 'MECHANIC');-->
-            <!--insert into CATEGORY(name, department) values('PODRACER', 'MECHANIC');-->
-            <!--insert into CATEGORY(name, department) values('REPULSORLIFT', 'MECHANIC');-->
-            <!--insert into CATEGORY(name, department) values('SPEEDER', 'MECHANIC');-->
-            <!--insert into CATEGORY(name, department) values('TRANSPORT', 'MECHANIC');-->
-            <!--insert into CATEGORY(name, department) values('WALKER', 'MECHANIC');-->
-            <!--insert into CATEGORY(name, department) values('INSTRUMENT', 'MISCELLANEOUS');-->
-            <!--insert into CATEGORY(name, department) values('MEDICAL', 'MISCELLANEOUS');-->
-            <!--insert into CATEGORY(name, department) values('GENERAL', 'MISCELLANEOUS');-->
-            <!--insert into CATEGORY(name, department) values('AMMUNITION', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('BATON', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('BLADE', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('BLASTER', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('BOW', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('EXPLOSIVE', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('GRENADE', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('LAUNCHER', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('LIGHTSABER', 'OFFENSE');-->
-            <!--insert into CATEGORY(name, department) values('WHIP', 'OFFENSE');-->
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'UTILITY', 'ACCESSORIES');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'MASK', 'ACCESSORIES');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'ARMOR', 'DEFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'SHIELD', 'DEFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'SUIT', 'DEFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'COMLINK', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'COMPUTER', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'DATACARD', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'DATAPAD', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'HOLO', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'HUD', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'PROCESSOR', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'SCANNER', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'SENSOR', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'TRANSLATOR', 'ELECTRONIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'DROID', 'MECHANIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'FIGHTER', 'MECHANIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'PODRACER', 'MECHANIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'REPULSORLIFT', 'MECHANIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'SPEEDER', 'MECHANIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'TRANSPORT', 'MECHANIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'WALKER', 'MECHANIC');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'INSTRUMENT', 'MISCELLANEOUS');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'MEDICAL', 'MISCELLANEOUS');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'GENERAL', 'MISCELLANEOUS');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'AMMUNITION', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'BATON', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'BLADE', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'BLASTER', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'BOW', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'EXPLOSIVE', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'GRENADE', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'LAUNCHER', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'LIGHTSABER', 'OFFENSE');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'WHIP', 'OFFENSE');
         </sql>
     </changeSet>
 
