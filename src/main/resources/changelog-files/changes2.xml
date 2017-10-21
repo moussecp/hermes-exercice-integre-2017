@@ -6,32 +6,32 @@
 
     <changeSet id="loadCategories" author="yannick" logicalFilePath="changes2.xml">
         <sql splitStatements="true">
-            insert into CATEGORY(name, department) values('BINOCULARS', 'ACCESSORIES');
-            insert into CATEGORY(name, department) values('UTILITY', 'ACCESSORIES');
-            insert into CATEGORY(name, department) values('MASK', 'ACCESSORIES');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval, 'BINOCULARS', 'ACCESSORIES');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval,'UTILITY', 'ACCESSORIES');
+            insert into CATEGORY(id, name, department) values(CATEGORY_SEQ.nextval,'MASK', 'ACCESSORIES');
             <!--insert into CATEGORY(name, department) values('ARMOR', 'DEFENSE');-->
             <!--insert into CATEGORY(name, department) values('SHIELD', 'DEFENSE');-->
             <!--insert into CATEGORY(name, department) values('SUIT', 'DEFENSE');-->
-            insert into CATEGORY(name, department) values('COMLINK', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('COMPUTER', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('DATACARD', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('DATAPAD', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('HOLO', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('HUD', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('PROCESSOR', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('SCANNER', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('SENSOR', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('TRANSLATOR', 'ELECTRONIC');
-            insert into CATEGORY(name, department) values('DROID', 'MECHANIC');
-            insert into CATEGORY(name, department) values('FIGHTER', 'MECHANIC');
-            insert into CATEGORY(name, department) values('PODRACER', 'MECHANIC');
-            insert into CATEGORY(name, department) values('REPULSORLIFT', 'MECHANIC');
-            insert into CATEGORY(name, department) values('SPEEDER', 'MECHANIC');
-            insert into CATEGORY(name, department) values('TRANSPORT', 'MECHANIC');
-            insert into CATEGORY(name, department) values('WALKER', 'MECHANIC');
-            insert into CATEGORY(name, department) values('INSTRUMENT', 'MISCELLANEOUS');
-            insert into CATEGORY(name, department) values('MEDICAL', 'MISCELLANEOUS');
-            insert into CATEGORY(name, department) values('GENERAL', 'MISCELLANEOUS');
+            <!--insert into CATEGORY(name, department) values('COMLINK', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('COMPUTER', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('DATACARD', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('DATAPAD', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('HOLO', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('HUD', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('PROCESSOR', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('SCANNER', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('SENSOR', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('TRANSLATOR', 'ELECTRONIC');-->
+            <!--insert into CATEGORY(name, department) values('DROID', 'MECHANIC');-->
+            <!--insert into CATEGORY(name, department) values('FIGHTER', 'MECHANIC');-->
+            <!--insert into CATEGORY(name, department) values('PODRACER', 'MECHANIC');-->
+            <!--insert into CATEGORY(name, department) values('REPULSORLIFT', 'MECHANIC');-->
+            <!--insert into CATEGORY(name, department) values('SPEEDER', 'MECHANIC');-->
+            <!--insert into CATEGORY(name, department) values('TRANSPORT', 'MECHANIC');-->
+            <!--insert into CATEGORY(name, department) values('WALKER', 'MECHANIC');-->
+            <!--insert into CATEGORY(name, department) values('INSTRUMENT', 'MISCELLANEOUS');-->
+            <!--insert into CATEGORY(name, department) values('MEDICAL', 'MISCELLANEOUS');-->
+            <!--insert into CATEGORY(name, department) values('GENERAL', 'MISCELLANEOUS');-->
             <!--insert into CATEGORY(name, department) values('AMMUNITION', 'OFFENSE');-->
             <!--insert into CATEGORY(name, department) values('BATON', 'OFFENSE');-->
             <!--insert into CATEGORY(name, department) values('BLADE', 'OFFENSE');-->
