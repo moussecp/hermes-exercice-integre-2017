@@ -1,5 +1,6 @@
 package com.hermes_ecs.java_exercise.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.persistence.*;
@@ -14,6 +15,7 @@ public class Product implements Identifiable<Long> {
     @Id
     @GeneratedValue(generator = "PRODUCT_SEQ_GEN")
     @SequenceGenerator(name = "PRODUCT_SEQ_GEN", sequenceName = "PRODUCT_SEQ", allocationSize = 20)
+    @JsonIgnore
     private Long id;
 
     @Column(nullable = false)

@@ -1,5 +1,6 @@
 package com.hermes_ecs.java_exercise.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -89,6 +90,7 @@ public class RepublicDactaryAmount {
         }
     }
 
+    @JsonIgnore
     public String getValueForDisplay() {
         return new DecimalFormat("#.##").format(value) + " " + SYMBOL;
     }
