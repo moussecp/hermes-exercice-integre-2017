@@ -67,7 +67,7 @@ public class BuyerController {
         }
     }
 
-    @RequestMapping(value = {"/{buyerId}"}, method = RequestMethod.PUT)
+    @RequestMapping(value = {"/{buyerId}"}, method = RequestMethod.POST)
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public String editBuyer(@PathVariable Long buyerId,
                             @ModelAttribute(BUYER_MODEL_ATTRIBUTE) @Valid BuyerForm buyerForm,
