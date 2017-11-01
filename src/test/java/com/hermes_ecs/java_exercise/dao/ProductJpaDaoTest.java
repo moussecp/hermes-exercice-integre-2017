@@ -41,13 +41,6 @@ public class ProductJpaDaoTest extends AbstractJpaDaoTest<Long, Product> {
         assertThat(dao.getProductsWithCategoryName("dummy"), is(empty()));
     }
 
-    @Test
-    public void getProductsWithCategoryDepartment() {
-        Product product = setUpProducts();
-        assertThat(dao.getProductsWithCategoryDepartment(ProductMother.DEPARTMENT), is(hasItem(product)));
-        assertThat(dao.getProductsWithCategoryName("dummy"), is(empty()));
-    }
-
     private Product setUpProducts() {
         Product product = ProductMother.getSimpleProduct();
         Product product2 = ProductMother.getSimpleProduct();
