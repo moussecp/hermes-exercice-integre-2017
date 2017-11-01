@@ -4,6 +4,8 @@ import com.hermes_ecs.java_exercise.domain.Product;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public class ProductJpaDao extends AbstractJpaDao<Long, Product> implements ProductDao {
 
@@ -32,4 +34,9 @@ public class ProductJpaDao extends AbstractJpaDao<Long, Product> implements Prod
         }
     }
 
+    @Override
+    public List<Product> findAllProductsOrganized() {
+        return getEntityManager().createQuery("select p from Product p order by p.label", Product.class)
+                .getResultList();
+    }
 }
