@@ -51,7 +51,7 @@ public class ProductController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String listProducts(ModelMap model) {
-        model.put(PRODUCTS_MODEL_ATTRIBUTE, productDao.findAll());
+        model.put(PRODUCTS_MODEL_ATTRIBUTE, productDao.findAllProductsOrganized());
         return FORWARD_TO_LIST;
     }
 
@@ -67,7 +67,7 @@ public class ProductController {
         }
     }
 
-    @RequestMapping(value = {"/{productId}"}, method = RequestMethod.PUT)
+    @RequestMapping(value = {"/{productId}"}, method = RequestMethod.POST)
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public String editProduct(@PathVariable Long productId,
                               @ModelAttribute(PRODUCT_MODEL_ATTRIBUTE) @Valid ProductForm productForm,
